@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<title>Md Rasheduzzaman</title>
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/067bf841b4.js" crossorigin="anonymous"></script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</head>
+
+<body>
+
+
+<div class="topnav">
+
+	<div class="name">
+	<a href=index.html>MD RASHEDUZZAMAN</a>
+	</div>
+	<a href=about.html> <i class="fa fa-address-card"> </i> About </a>
+	<a href="blog.html"> <i class="fa fa-address-book"> </i> Blog </a>
+	<a href=resume.html> <i class="fa fa-file"> </i> Resume </a>
+	<a class="active" href=gallery.html><i class="fa fa-camera"></i> Gallery </a>
+  <a href=index.html> <i class="fa fa-home"></i> Home </a>
+</div>
+
+<!-- Slide Show Start -->
+<div class="show">
+  <a data-flickr-embed="true" data-footer="true" href="https://www.flickr.com/photos/191053345@N04" title="">
+    <img src="https://live.staticflickr.com/65535/51728113808_e1e1f8ff7f_h.jpg" width="1600" height="1200" alt=""></a>
+  <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+</div>
+<!-- Slide Show End -->
+<div class="gap"></div>
+<div class="downnav">
+	<a href=https://www.behance.net/mrgallery> <i class="fa fa-behance"> </i> Behance</a>
+	<a href=https://www.flickr.com/photos/mrgallery> <i class="fa fa-flickr"> </i> Flickr</a>
+	<a href=https://www.instagram.com/m_rasheduzzaman_009> <i class="fa fa-instagram"> </i> Instagram</a>
+	<a href=https://twitter.com/Rasheduzzaman_> <i class="fa fa-twitter"> </i> Twitter</a>
+  <a href=https://www.facebook.com/mdrasheduzzaman7797> <i class="fa fa-facebook"> </i> Facebook</a>
+  <div class="copyright">
+	  <a href=https://www.facebook.com/mdrasheduzzaman7797>Copyright<i class="fa fa-copyright" aria-hidden="true"></i> Md Rasheduzzaman</a>
+	</div>
+</div>
+
+</body>
+</html>
